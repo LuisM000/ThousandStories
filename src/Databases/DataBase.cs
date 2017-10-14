@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model.Story;
+using System;
 using System.Data.Common;
 using System.Data.Entity;
 
@@ -12,7 +13,7 @@ namespace Databases
             this.Database.CommandTimeout = Int32.MaxValue;
         }
 
-
+        public virtual DbSet<Story> Stories { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

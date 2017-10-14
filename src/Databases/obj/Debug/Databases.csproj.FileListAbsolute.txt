@@ -8,3 +8,17 @@ c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases\bin\Debug\
 c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases\obj\Debug\Databases.csprojResolveAssemblyReference.cache
 c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases\obj\Debug\Databases.dll
 c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases\obj\Debug\Databases.pdb
+C:\sources\1000Stories\src\Databases\obj\Debug\Databases.csprojResolveAssemblyReference.cache
+C:\sources\1000Stories\src\Databases\obj\Debug\Databases.dll
+C:\sources\1000Stories\src\Databases\obj\Debug\Databases.pdb
+C:\sources\1000Stories\src\Databases\bin\Debug\Databases.dll.config
+C:\sources\1000Stories\src\Databases\bin\Debug\Databases.dll
+C:\sources\1000Stories\src\Databases\bin\Debug\Databases.pdb
+C:\sources\1000Stories\src\Databases\bin\Debug\EntityFramework.dll
+C:\sources\1000Stories\src\Databases\bin\Debug\EntityFramework.SqlServer.dll
+C:\sources\1000Stories\src\Databases\bin\Debug\Infrastructure.dll
+C:\sources\1000Stories\src\Databases\bin\Debug\Model.dll
+C:\sources\1000Stories\src\Databases\bin\Debug\Infrastructure.pdb
+C:\sources\1000Stories\src\Databases\bin\Debug\Model.pdb
+C:\sources\1000Stories\src\Databases\bin\Debug\EntityFramework.xml
+C:\sources\1000Stories\src\Databases\bin\Debug\EntityFramework.SqlServer.xml

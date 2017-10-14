@@ -6,6 +6,12 @@ namespace Model.Story
 {
     public class Story : Entity
     {
+
+        public Story()
+        {
+            this.PublishDate = DateTime.Now;
+        }
+
         public Title Title { get; set; }
         public virtual Content Content { get; set; }//ToDo: review if virtual is necessary (for lazy load??)
         public virtual IEnumerable<Image> Images { get; set; }
