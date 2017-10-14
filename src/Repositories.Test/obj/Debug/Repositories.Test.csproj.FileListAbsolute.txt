@@ -25,3 +25,30 @@ C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Repositories.Test\bi
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Repositories.Test\bin\Debug\Moq.xml
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Repositories.Test\obj\Debug\Repositories.Test.dll
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Repositories.Test\obj\Debug\Repositories.Test.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Repositories.Test.dll.config
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Repositories.Test.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Repositories.Test.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Castle.Core.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Databases.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Databases.Factories.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Domain.Interfaces.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\EntityFramework.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Infrastructure.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Model.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Moq.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Repositories.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Databases.Factories.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Databases.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Domain.Interfaces.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Infrastructure.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Repositories.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Model.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Castle.Core.xml
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\EntityFramework.xml
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Moq.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Moq.xml
+C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.csprojResolveAssemblyReference.cache
+C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.dll
+C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.pdb

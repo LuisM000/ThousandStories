@@ -5,3 +5,10 @@ C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Stories\bin\Debug\In
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Stories\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Stories\obj\Debug\Model.dll
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Stories\obj\Debug\Model.pdb
+C:\sources\1000Stories\src\Stories\bin\Debug\Model.dll
+C:\sources\1000Stories\src\Stories\bin\Debug\Model.pdb
+C:\sources\1000Stories\src\Stories\bin\Debug\Infrastructure.dll
+C:\sources\1000Stories\src\Stories\bin\Debug\Infrastructure.pdb
+C:\sources\1000Stories\src\Stories\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\sources\1000Stories\src\Stories\obj\Debug\Model.dll
+C:\sources\1000Stories\src\Stories\obj\Debug\Model.pdb

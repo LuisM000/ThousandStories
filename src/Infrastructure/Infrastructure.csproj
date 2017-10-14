@@ -50,7 +50,8 @@
   <ItemGroup>
     <Compile Include="Entity.cs" />
     <Compile Include="IEntity.cs" />
-    <Compile Include="IOrdering.cs" />
+    <Compile Include="Order\IOrderExtension.cs" />
+    <Compile Include="Order\IOrdering.cs" />
     <Compile Include="Pagination.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query.cs" />

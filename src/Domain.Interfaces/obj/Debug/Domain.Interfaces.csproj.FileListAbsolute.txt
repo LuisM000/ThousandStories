@@ -7,3 +7,12 @@ C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Domain.Interfaces\bi
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Infrastructure.pdb
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Model.dll
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Model.pdb
+C:\sources\1000Stories\src\Domain.Interfaces\bin\Debug\Domain.Interfaces.dll
+C:\sources\1000Stories\src\Domain.Interfaces\bin\Debug\Domain.Interfaces.pdb
+C:\sources\1000Stories\src\Domain.Interfaces\bin\Debug\Infrastructure.dll
+C:\sources\1000Stories\src\Domain.Interfaces\bin\Debug\Model.dll
+C:\sources\1000Stories\src\Domain.Interfaces\bin\Debug\Infrastructure.pdb
+C:\sources\1000Stories\src\Domain.Interfaces\bin\Debug\Model.pdb
+C:\sources\1000Stories\src\Domain.Interfaces\obj\Debug\Domain.Interfaces.csprojResolveAssemblyReference.cache
+C:\sources\1000Stories\src\Domain.Interfaces\obj\Debug\Domain.Interfaces.dll
+C:\sources\1000Stories\src\Domain.Interfaces\obj\Debug\Domain.Interfaces.pdb

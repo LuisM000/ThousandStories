@@ -1,5 +1,6 @@
 ﻿using Databases;
 using Infrastructure;
+using Infrastructure.Order;
 using Infrastructure.Specification;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -72,7 +73,15 @@ namespace Repositories.Test
         [TestMethod]
         public void ReturnsResultsOrderDescendingByIndex()
         {
-            throw new NotImplementedException();
+            IOrdering<FooEntity> orderingById = new FooOrderByDescendingId();
+            IEnumerable<FooEntity> tenFooEntities = this.GivenAFooEntitiesWithRandomId(10);
+            FakeDbSet<FooEntity> fooDbSet = new FakeDbSet<FooEntity>(tenFooEntities);
+            Mock<FakeDatabase> database = FakeDatabase.CreateMockOfFakeDatabase(fooDbSet);
+            BaseRepository<FooEntity> baseRepository = this.GivenABaseRepositoryWithDatabase(database.Object);
+
+            IEnumerable<FooEntity> results = baseRepository.GetAll(new Query<FooEntity>(null, null, orderingById));
+
+            CollectionAssert.AreEqual(tenFooEntities.OrderByDescending(i => i.Id).ToList(), results.ToList());
         }
 
 
@@ -101,8 +110,9 @@ namespace Repositories.Test
         }
         private IEnumerable<FooEntity> GivenAFooEntitiesWithRandomId(int numberOfFooEntities)
         {
+            Random random = new Random(DateTime.Now.Millisecond);
             return new List<FooEntity>(Enumerable.Range(0, numberOfFooEntities).
-                Select(x => new FooEntity() { Id = new Random().Next(100) }));
+                Select(x => new FooEntity() { Id = random.Next(100) }));
         }
         private FooEntity GivenAFooEntityWithBarText(string barText)
         {

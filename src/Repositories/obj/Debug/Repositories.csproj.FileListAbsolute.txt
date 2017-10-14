@@ -18,3 +18,23 @@ C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Repositories\bin\Deb
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Repositories\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Repositories\bin\Debug\Model.dll
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Repositories\bin\Debug\Model.pdb
+C:\sources\1000Stories\src\Repositories\bin\Debug\Repositories.dll.config
+C:\sources\1000Stories\src\Repositories\bin\Debug\Repositories.dll
+C:\sources\1000Stories\src\Repositories\bin\Debug\Repositories.pdb
+C:\sources\1000Stories\src\Repositories\bin\Debug\Databases.dll
+C:\sources\1000Stories\src\Repositories\bin\Debug\Databases.Factories.dll
+C:\sources\1000Stories\src\Repositories\bin\Debug\Domain.Interfaces.dll
+C:\sources\1000Stories\src\Repositories\bin\Debug\EntityFramework.dll
+C:\sources\1000Stories\src\Repositories\bin\Debug\EntityFramework.SqlServer.dll
+C:\sources\1000Stories\src\Repositories\bin\Debug\Infrastructure.dll
+C:\sources\1000Stories\src\Repositories\bin\Debug\Model.dll
+C:\sources\1000Stories\src\Repositories\bin\Debug\Databases.Factories.pdb
+C:\sources\1000Stories\src\Repositories\bin\Debug\Databases.pdb
+C:\sources\1000Stories\src\Repositories\bin\Debug\Domain.Interfaces.pdb
+C:\sources\1000Stories\src\Repositories\bin\Debug\Infrastructure.pdb
+C:\sources\1000Stories\src\Repositories\bin\Debug\Model.pdb
+C:\sources\1000Stories\src\Repositories\bin\Debug\EntityFramework.xml
+C:\sources\1000Stories\src\Repositories\bin\Debug\EntityFramework.SqlServer.xml
+C:\sources\1000Stories\src\Repositories\obj\Debug\Repositories.csprojResolveAssemblyReference.cache
+C:\sources\1000Stories\src\Repositories\obj\Debug\Repositories.dll
+C:\sources\1000Stories\src\Repositories\obj\Debug\Repositories.pdb

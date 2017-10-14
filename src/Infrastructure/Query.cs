@@ -1,4 +1,5 @@
 ﻿
+using Infrastructure.Order;
 using Infrastructure.Specification;
 using System.Linq;
 namespace Infrastructure
@@ -24,7 +25,7 @@ namespace Infrastructure
             if (Pagination != null)
                 queryable = queryable.Skip(Pagination.SkippedRows).Take(Pagination.RowsPerPage);
             if (OrderBy != null)
-                queryable = queryable.OrderBy(o => OrderBy);
+                queryable = queryable.OrderBy(OrderBy);
 
             return queryable;
         }

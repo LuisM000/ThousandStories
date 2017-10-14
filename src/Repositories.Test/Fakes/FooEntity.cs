@@ -1,5 +1,6 @@
 ﻿
 using Infrastructure;
+using Infrastructure.Order;
 using Infrastructure.Specification;
 using System;
 using System.Linq;
@@ -14,9 +15,17 @@ namespace Repositories.Test.Fakes
 
     public class FooOrderById : IOrdering<FooEntity>
     {
-        public Func<IQueryable<FooEntity>, IOrderedQueryable<FooEntity>> Sort
+        public IOrderedQueryable<FooEntity> OrderingBy(IQueryable<FooEntity> query)
         {
-            get { return stories => stories.OrderBy(s => s.Id); }
+            return query.OrderBy(s => s.Id);
+        }
+    }
+
+    public class FooOrderByDescendingId : IOrdering<FooEntity>
+    {
+        public IOrderedQueryable<FooEntity> OrderingBy(IQueryable<FooEntity> query)
+        {
+            return query.OrderByDescending(s => s.Id);
         }
     }
 

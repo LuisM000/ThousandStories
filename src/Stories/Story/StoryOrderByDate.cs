@@ -1,14 +1,15 @@
 ﻿using Infrastructure;
+using Infrastructure.Order;
 using System;
 using System.Linq;
 
 namespace Model.Story
 {
     public class StoryOrderByDate : IOrdering<Story>
-    {
-        public Func<IQueryable<Story>, IOrderedQueryable<Story>> Sort
+    {      
+        public IOrderedQueryable<Story> OrderingBy(IQueryable<Story> query)
         {
-            get { return stories => stories.OrderBy(s => s.PublishDate); }
+            return query.OrderBy(s => s.PublishDate);
         }
     }
 }
