@@ -39,11 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\CategoryMapped.cs" />
-    <Compile Include="Model\LanguageMapped.cs" />
-    <Compile Include="Model\MappedEntity.cs" />
-    <Compile Include="Model\MultilingualStringMapped.cs" />
-    <Compile Include="Model\TranslationMapped.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
