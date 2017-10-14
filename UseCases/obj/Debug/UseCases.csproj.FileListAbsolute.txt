@@ -1,0 +1,9 @@
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\obj\Debug\UseCases.csprojResolveAssemblyReference.cache
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\bin\Debug\UseCases.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\bin\Debug\UseCases.pdb
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\bin\Debug\Infrastructure.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\bin\Debug\Infrastructure.pdb
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\obj\Debug\UseCases.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\obj\Debug\UseCases.pdb
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\UseCases\bin\Debug\Model.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\UseCases\bin\Debug\Model.pdb

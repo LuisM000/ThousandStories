@@ -1,0 +1,12 @@
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\Databases.Factories.dll.config
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\Databases.Factories.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\Databases.Factories.pdb
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\Databases.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\EntityFramework.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\Databases.pdb
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\EntityFramework.xml
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\obj\Debug\Databases.Factories.csprojResolveAssemblyReference.cache
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\obj\Debug\Databases.Factories.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Databases.Factories\obj\Debug\Databases.Factories.pdb

@@ -1,0 +1,9 @@
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Domain.Interfaces.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Domain.Interfaces.pdb
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Domain.Interfaces\obj\Debug\Domain.Interfaces.csprojResolveAssemblyReference.cache
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Domain.Interfaces\obj\Debug\Domain.Interfaces.dll
+c:\Users\Luis\documents\visual studio 2013\Projects\Stories\Domain.Interfaces\obj\Debug\Domain.Interfaces.pdb
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Infrastructure.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Infrastructure.pdb
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Model.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\Domain.Interfaces\bin\Debug\Model.pdb

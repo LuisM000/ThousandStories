@@ -1,0 +1,7 @@
+c:\users\luis\documents\visual studio 2013\Projects\Stories\Stories\obj\Debug\Stories.Model.csprojResolveAssemblyReference.cache
+c:\users\luis\documents\visual studio 2013\Projects\Stories\Stories\bin\Debug\Stories.dll
+c:\users\luis\documents\visual studio 2013\Projects\Stories\Stories\bin\Debug\Stories.pdb
+c:\users\luis\documents\visual studio 2013\Projects\Stories\Stories\obj\Debug\Stories.dll
+c:\users\luis\documents\visual studio 2013\Projects\Stories\Stories\obj\Debug\Stories.pdb
+c:\users\luis\documents\visual studio 2013\Projects\Stories\Stories\bin\Debug\Infrastructure.dll
+c:\users\luis\documents\visual studio 2013\Projects\Stories\Stories\bin\Debug\Infrastructure.pdb
