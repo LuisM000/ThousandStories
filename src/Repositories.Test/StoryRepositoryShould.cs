@@ -5,7 +5,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Model;
 using Model.Story;
 using Moq;
+using Repositories.Test.Builders;
 using Repositories.Test.Fakes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -18,8 +20,8 @@ namespace Repositories.Test
         [TestMethod]
         public void ReturnStoriesWithTextInTitle()
         {
-            Story storyTitle1 = this.GivenAStoryWithTitle("Title 1");
-            Story storyTitle2 = this.GivenAStoryWithTitle("Title 2");
+            Story storyTitle1 = new StoryBuilder().WithTitle("Title 1");
+            Story storyTitle2 = new StoryBuilder().WithTitle("Title 2");
             FakeDbSet<Story> storyDbSet = new FakeDbSet<Story>()
             {
                 storyTitle1,storyTitle2
@@ -36,8 +38,8 @@ namespace Repositories.Test
         [TestMethod]
         public void ReturnStoriesWithLanguage()
         {
-            Story storyEs = this.GivenAStoryWithLanguage("es");
-            Story storyEn = this.GivenAStoryWithLanguage("en");
+            Story storyEs = new StoryBuilder().WithLanguage(Languages.es);
+            Story storyEn = new StoryBuilder().WithLanguage(Languages.en);
             FakeDbSet<Story> storyDbSet = new FakeDbSet<Story>()
             {
                 storyEs,storyEn
@@ -52,21 +54,37 @@ namespace Repositories.Test
         }
 
 
+        [TestMethod]
+        public void ReturnLastestStoriesWithLanguage()
+        {
+            Story yesterdayStory = new StoryBuilder().WithPublishDate(DateTime.Now.AddDays(-1));
+            Story todayStory = new StoryBuilder().WithPublishDate(DateTime.Now);
+            Story dayBeforeYesterdayStory = new StoryBuilder().WithPublishDate(DateTime.Now.AddDays(-2));
+            Story storyWithDifferentLanguage = new StoryBuilder().WithLanguage(Languages.en).WithPublishDate(DateTime.Now);
+
+            FakeDbSet<Story> storyDbSet = new FakeDbSet<Story>()
+            {
+                dayBeforeYesterdayStory,todayStory,yesterdayStory
+            };
+            Mock<FakeDatabase> database = FakeDatabase.CreateMockOfFakeDatabase(storyDbSet);
+            StoryRepository.StoryRepository storyRepository = this.GivenAStoryRepositoryWithDatabase(database.Object);
+
+            IList<Story> stories = storyRepository.GetLastestStories(null, new Pagination(0, 10)).ToList();
+
+            Assert.AreEqual(3, stories.Count());
+            Assert.AreEqual(todayStory, stories[0]);
+            Assert.AreEqual(yesterdayStory, stories[1]);
+            Assert.AreEqual(dayBeforeYesterdayStory, stories[2]);
+        }
 
 
-        private Story GivenAStoryWithTitle(string title)
-        {
-            return new Story() { Title = title, Language = new Language() { } };
-        }
-        private Story GivenAStoryWithLanguage(string language)
-        {
-            return new Story() { Language = new Language() { LanguageIdentifier = language } };
-        }
+       
+
         private StoryRepository.StoryRepository GivenAStoryRepositoryWithDatabase(DataBase database)
         {
             return new StoryRepository.StoryRepository(FakeDatabase.GivenAFactoryWithDatabase(database).Object);
         }
-       
+
 
     }
 }

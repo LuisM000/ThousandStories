@@ -12,9 +12,10 @@ namespace Repositories.StoryRepository
     {
         public StoryRepository(IFactoryDB factoryDB) : base(factoryDB) { }
 
-        public IEnumerable<Story> GetRelevantStories(Pagination pagination, string language)
+        public IEnumerable<Story> GetLastestStories(string language, Pagination pagination)
         {
-            throw new System.NotImplementedException();
+            var query = new Query<Story>(new StoryWithLanguageSpec(language), pagination, new StoryOrderByDate());
+            return base.GetAll(query);
         }
 
         public IEnumerable<Story> GetWithText(string text, string language, Pagination pagination, IOrdering<Story> orderBy)

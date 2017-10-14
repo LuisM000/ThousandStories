@@ -8,7 +8,7 @@ namespace Repositories.StoryRepository
 {
     public interface IStoryRepository : IRepository<Story>
     {
-        IEnumerable<Story> GetRelevantStories(Pagination pagination, string language);
+        IEnumerable<Story> GetLastestStories(string language, Pagination pagination);
         IEnumerable<Story> GetWithText(string text, string language, Pagination pagination, IOrdering<Story> orderBy);
 
 
