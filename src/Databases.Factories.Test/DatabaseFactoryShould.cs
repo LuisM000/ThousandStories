@@ -9,7 +9,8 @@ namespace Databases.Factories.Test
     [TestClass]
     public class DatabaseFactoryShould
     {
-         [TestMethod]
+        [Ignore]
+        [TestMethod]
         public void CreateNewDatabase()
         {
             IDatabaseInitializer<DataBaseSQL> initializer = new DropCreateDatabaseAlways<DataBaseSQL>();
