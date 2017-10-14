@@ -27,7 +27,7 @@ namespace Repositories.Test.Builders
 
         public StoryBuilder WithTitle(string title)
         {
-            story.Title = title;
+            story.Title = new Title(title);
             return this;
         }
 

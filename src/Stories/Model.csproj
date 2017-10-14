@@ -50,6 +50,7 @@
     <Compile Include="Story\StoryWithTextSpec.cs" />
     <Compile Include="Story\Story.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Title.cs" />
     <Compile Include="Translation.cs" />
     <Compile Include="MultilingualString.cs" />
   </ItemGroup>

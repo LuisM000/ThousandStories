@@ -16,7 +16,7 @@ namespace Model.Story
         public Expression<Func<Story, bool>> IsSatisifiedBy()
         {
             return x => (x.Content != null && x.Content.Text == text) ||
-                        (x.Title == text);
+                        (x.Title !=null && x.Title.Value == text);
         }
 
     }
