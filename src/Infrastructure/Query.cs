@@ -20,6 +20,8 @@ namespace Infrastructure
 
         public IQueryable<TEntity> Prepare(IQueryable<TEntity> queryable)
         {
+            if (queryable == null)
+                return queryable;
             if (Specification != null)
                 queryable = queryable.Where(Specification.IsSatisifiedBy());
             if (Pagination != null)
