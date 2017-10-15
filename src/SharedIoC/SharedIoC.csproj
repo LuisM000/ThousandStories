@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{110EAD12-2BD6-44F3-9569-3495DD66F36D}</ProjectGuid>
+    <ProjectGuid>{56B92229-B80B-4CFB-A700-EB68D6CA031A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UseCases</RootNamespace>
-    <AssemblyName>UseCases</AssemblyName>
+    <RootNamespace>SharedIoC</RootNamespace>
+    <AssemblyName>SharedIoC</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,17 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj">
+      <Project>{85e029ef-4202-496d-b1a4-0f05cc58fbb0}</Project>
+      <Name>Domain.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <Project>{90d0d7fb-cc44-4e72-a967-182f072ae3fc}</Project>
       <Name>Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Stories\Model.csproj">
-      <Project>{468489a8-993b-4818-a8de-17a0fb310b7e}</Project>
-      <Name>Model</Name>
+    <ProjectReference Include="..\Repositories\Repositories.csproj">
+      <Project>{96427ab1-e9ef-4861-bf06-d17b060e15fd}</Project>
+      <Name>Repositories</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UseCases\Model.Services.csproj">
+      <Project>{110ead12-2bd6-44f3-9569-3495dd66f36d}</Project>
+      <Name>Model.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

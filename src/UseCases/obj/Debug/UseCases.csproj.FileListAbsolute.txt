@@ -7,12 +7,22 @@ c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\obj\Debug\U
 c:\Users\Luis\documents\visual studio 2013\Projects\Stories\UseCases\obj\Debug\UseCases.pdb
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\UseCases\bin\Debug\Model.dll
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\Stories\UseCases\bin\Debug\Model.pdb
-C:\sources\1000Stories\src\UseCases\bin\Debug\UseCases.dll
-C:\sources\1000Stories\src\UseCases\bin\Debug\UseCases.pdb
 C:\sources\1000Stories\src\UseCases\bin\Debug\Infrastructure.dll
 C:\sources\1000Stories\src\UseCases\bin\Debug\Model.dll
 C:\sources\1000Stories\src\UseCases\bin\Debug\Infrastructure.pdb
 C:\sources\1000Stories\src\UseCases\bin\Debug\Model.pdb
 C:\sources\1000Stories\src\UseCases\obj\Debug\UseCases.csprojResolveAssemblyReference.cache
-C:\sources\1000Stories\src\UseCases\obj\Debug\UseCases.dll
-C:\sources\1000Stories\src\UseCases\obj\Debug\UseCases.pdb
+C:\sources\1000Stories\src\UseCases\bin\Debug\Domain.Interfaces.dll
+C:\sources\1000Stories\src\UseCases\bin\Debug\Repositories.dll
+C:\sources\1000Stories\src\UseCases\bin\Debug\Databases.Factories.dll
+C:\sources\1000Stories\src\UseCases\bin\Debug\Databases.dll
+C:\sources\1000Stories\src\UseCases\bin\Debug\EntityFramework.dll
+C:\sources\1000Stories\src\UseCases\bin\Debug\Domain.Interfaces.pdb
+C:\sources\1000Stories\src\UseCases\bin\Debug\Repositories.pdb
+C:\sources\1000Stories\src\UseCases\bin\Debug\Databases.Factories.pdb
+C:\sources\1000Stories\src\UseCases\bin\Debug\Databases.pdb
+C:\sources\1000Stories\src\UseCases\bin\Debug\EntityFramework.xml
+C:\sources\1000Stories\src\UseCases\bin\Debug\Model.Services.dll
+C:\sources\1000Stories\src\UseCases\bin\Debug\Model.Services.pdb
+C:\sources\1000Stories\src\UseCases\obj\Debug\Model.Services.dll
+C:\sources\1000Stories\src\UseCases\obj\Debug\Model.Services.pdb

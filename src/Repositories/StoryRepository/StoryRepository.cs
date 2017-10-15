@@ -1,9 +1,8 @@
-﻿
-using Databases.Factories;
+﻿using Databases.Factories;
 using Infrastructure;
 using Infrastructure.Order;
 using Infrastructure.Specification;
-using Model.Story;
+using Model;
 using System.Collections.Generic;
 
 namespace Repositories.StoryRepository

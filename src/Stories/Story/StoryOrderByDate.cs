@@ -1,7 +1,7 @@
 ﻿using Infrastructure.Order;
 using System.Linq;
 
-namespace Model.Story
+namespace Model
 {
     public class StoryOrderByDate : IOrdering<Story>
     {

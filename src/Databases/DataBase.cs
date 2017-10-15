@@ -1,4 +1,4 @@
-﻿using Model.Story;
+﻿using Model;
 using System;
 using System.Data.Common;
 using System.Data.Entity;

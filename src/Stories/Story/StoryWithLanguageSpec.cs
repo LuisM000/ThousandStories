@@ -2,7 +2,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace Model.Story
+namespace Model
 {
     public class StoryWithLanguageSpec : ISpecification<Story>
     {
