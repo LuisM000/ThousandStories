@@ -114,6 +114,10 @@
       <Project>{3051F3E0-5AF3-42E1-A0F1-C36793CDAFDA}</Project>
       <Name>APIStories</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
+      <Project>{90d0d7fb-cc44-4e72-a967-182f072ae3fc}</Project>
+      <Name>Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Stories\Model.csproj">
       <Project>{468489a8-993b-4818-a8de-17a0fb310b7e}</Project>
       <Name>Model</Name>

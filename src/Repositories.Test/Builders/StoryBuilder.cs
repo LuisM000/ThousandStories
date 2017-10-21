@@ -1,5 +1,4 @@
 ﻿using Model;
-using Model.Story;
 using System;
 
 namespace Repositories.Test.Builders

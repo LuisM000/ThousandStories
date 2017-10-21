@@ -1,9 +1,9 @@
 ﻿using Databases;
 using Databases.Factories;
-using Model.Story;
 using Moq;
 using System;
 using System.Data.Common;
+using Model;
 
 namespace Repositories.Test.Fakes
 {

@@ -3,7 +3,6 @@ using Databases.Factories;
 using Infrastructure;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Model;
-using Model.Story;
 using Moq;
 using Repositories.Test.Builders;
 using Repositories.Test.Fakes;

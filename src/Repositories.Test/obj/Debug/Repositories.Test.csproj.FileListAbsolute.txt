@@ -52,3 +52,5 @@ C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Moq.xml
 C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.csprojResolveAssemblyReference.cache
 C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.dll
 C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.pdb
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

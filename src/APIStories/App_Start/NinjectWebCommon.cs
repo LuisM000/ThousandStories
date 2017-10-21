@@ -54,7 +54,7 @@ namespace APIStories.App_Start
                 GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(composer);
                 return composer;
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 composer.Dispose();
                 throw;

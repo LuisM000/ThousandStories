@@ -9,17 +9,15 @@ namespace Repositories.Test.Fakes
 {
     public class FakeDbSet<T> : DbSet<T>, IDbSet<T> where T : class
     {
-        List<T> _data;
-
         public FakeDbSet()
         {
-            _data = new List<T>();
+            Local = new List<T>();
         }
 
         public FakeDbSet(IEnumerable<T> data)
             : this()
         {
-            _data.AddRange(data);
+            Local.AddRange(data);
         }
 
         public override T Find(params object[] keyValues)
@@ -29,13 +27,13 @@ namespace Repositories.Test.Fakes
 
         public override T Add(T item)
         {
-            _data.Add(item);
+            Local.Add(item);
             return item;
         }
 
         public override T Remove(T item)
         {
-            _data.Remove(item);
+            Local.Remove(item);
             return item;
         }
 
@@ -46,7 +44,7 @@ namespace Repositories.Test.Fakes
 
         public T Detach(T item)
         {
-            _data.Remove(item);
+            Local.Remove(item);
             return item;
         }
 
@@ -55,20 +53,17 @@ namespace Repositories.Test.Fakes
             return Activator.CreateInstance<T>();
         }
 
-        public TDerivedEntity Create<TDerivedEntity>() where TDerivedEntity : class, T
+        public new TDerivedEntity Create<TDerivedEntity>() where TDerivedEntity : class, T
         {
             return Activator.CreateInstance<TDerivedEntity>();
         }
 
-        public List<T> Local
-        {
-            get { return _data; }
-        }
+        public new List<T> Local { get; }
 
         public override IEnumerable<T> AddRange(IEnumerable<T> entities)
         {
-            _data.AddRange(entities);
-            return _data;
+            Local.AddRange(entities);
+            return Local;
         }
 
         public override IEnumerable<T> RemoveRange(IEnumerable<T> entities)
@@ -76,7 +71,7 @@ namespace Repositories.Test.Fakes
             for (int i = entities.Count() - 1; i >= 0; i--)
             {
                 T entity = entities.ElementAt(i);
-                if (_data.Contains(entity))
+                if (Local.Contains(entity))
                 {
                     Remove(entity);
                 }
@@ -87,27 +82,27 @@ namespace Repositories.Test.Fakes
 
         Type IQueryable.ElementType
         {
-            get { return _data.AsQueryable().ElementType; }
+            get { return Local.AsQueryable().ElementType; }
         }
 
         Expression IQueryable.Expression
         {
-            get { return _data.AsQueryable().Expression; }
+            get { return Local.AsQueryable().Expression; }
         }
 
         IQueryProvider IQueryable.Provider
         {
-            get { return _data.AsQueryable().Provider; }
+            get { return Local.AsQueryable().Provider; }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return _data.GetEnumerator();
+            return Local.GetEnumerator();
         }
 
         IEnumerator<T> IEnumerable<T>.GetEnumerator()
         {
-            return _data.GetEnumerator();
+            return Local.GetEnumerator();
         }
     }
 }

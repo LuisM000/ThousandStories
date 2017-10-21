@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Model;
-using Model.Story;
 using System.Collections.Generic;
 using System.Data.Entity;
 
