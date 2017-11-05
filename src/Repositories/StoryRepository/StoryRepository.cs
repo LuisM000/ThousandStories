@@ -14,14 +14,14 @@ namespace Repositories.StoryRepository
         public IEnumerable<Story> GetLastestStories(string language, Pagination pagination)
         {
             var query = new Query<Story>(new StoryWithLanguageSpec(language), pagination, new StoryOrderByDate());
-            return base.GetAll(query);
+            return GetAll(query);
         }
 
         public IEnumerable<Story> GetWithText(string text, string language, Pagination pagination, IOrdering<Story> orderBy)
         {
             var query = new Query<Story>(new StoryWithTextSpec(text).And(new StoryWithLanguageSpec(language)),
                 pagination, orderBy);
-            return base.GetAll(query);
+            return GetAll(query);
         }
     }
 }

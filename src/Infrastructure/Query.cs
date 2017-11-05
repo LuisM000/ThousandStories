@@ -21,13 +21,14 @@ namespace Infrastructure
         public IQueryable<TEntity> Prepare(IQueryable<TEntity> queryable)
         {
             if (queryable == null)
-                return queryable;
+                return null;
             if (Specification != null)
                 queryable = queryable.Where(Specification.IsSatisifiedBy());
-            if (Pagination != null)
-                queryable = queryable.Skip(Pagination.SkippedRows).Take(Pagination.RowsPerPage);
             if (OrderBy != null)
                 queryable = queryable.OrderBy(OrderBy);
+            if (Pagination != null)
+                queryable = queryable.Skip(Pagination.SkippedRows).Take(Pagination.RowsPerPage);
+            
 
             return queryable;
         }

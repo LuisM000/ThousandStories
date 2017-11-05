@@ -45,6 +45,7 @@
     <Compile Include="Image.cs" />
     <Compile Include="Language.cs" />
     <Compile Include="Rating.cs" />
+    <Compile Include="Story\StoryBuilder.cs" />
     <Compile Include="Story\StoryOrderByDate.cs" />
     <Compile Include="Story\StoryWithLanguageSpec.cs" />
     <Compile Include="Story\StoryWithTextSpec.cs" />

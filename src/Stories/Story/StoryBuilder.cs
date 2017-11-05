@@ -1,13 +1,13 @@
 ﻿using Model;
 using System;
 
-namespace Repositories.Test.Builders
+namespace Model
 {
     public enum Languages { en, es };
 
     public class StoryBuilder
     {
-        private Story story;
+        private readonly Story story;
 
         public StoryBuilder()
         {

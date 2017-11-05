@@ -69,7 +69,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Builders\StoryBuilder.cs" />
     <Compile Include="Fakes\FakeDatabase.cs" />
     <Compile Include="Fakes\FakeDbSet.cs" />
     <Compile Include="Fakes\FooEntity.cs" />

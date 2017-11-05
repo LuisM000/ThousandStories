@@ -84,7 +84,7 @@ namespace Repositories
 
         public IEnumerable<TEntity> GetAll(Query<TEntity> query)
         {
-            return ((IQueryable<TEntity>)factoryDB.CreateDataBase(Connection).Set<TEntity>()).Prepare(query);
+            return factoryDB.CreateDataBase(Connection).Set<TEntity>().Prepare(query);
         }
 
 
@@ -112,7 +112,6 @@ namespace Repositories
 
             catch (Exception ex)
             {
-                var dato = ex;
                 throw ex;
             }
         }

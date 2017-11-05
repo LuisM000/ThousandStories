@@ -15,7 +15,7 @@ namespace Model
 
         public Expression<Func<Story, bool>> IsSatisifiedBy()
         {
-            return x => (x.Language != null && x.Language.IsThisLanguage(language));
+            return x => (x.Language != null && x.Language.LanguageIdentifier == language);
         }
 
     }
