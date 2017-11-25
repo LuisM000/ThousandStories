@@ -53,4 +53,9 @@ C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.csprojR
 C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.dll
 C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.pdb
 C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Databases.Factories.dll.config
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Databases.dll.config
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Infrastructure.dll.config
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\Repositories.dll.config
+C:\sources\1000Stories\src\Repositories.Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\sources\1000Stories\src\Repositories.Test\obj\Debug\Repositories.Test.csproj.CoreCompileInputs.cache

@@ -16,3 +16,5 @@ C:\sources\1000Stories\src\Domain.Interfaces\bin\Debug\Model.pdb
 C:\sources\1000Stories\src\Domain.Interfaces\obj\Debug\Domain.Interfaces.csprojResolveAssemblyReference.cache
 C:\sources\1000Stories\src\Domain.Interfaces\obj\Debug\Domain.Interfaces.dll
 C:\sources\1000Stories\src\Domain.Interfaces\obj\Debug\Domain.Interfaces.pdb
+C:\sources\1000Stories\src\Domain.Interfaces\bin\Debug\Infrastructure.dll.config
+C:\sources\1000Stories\src\Domain.Interfaces\obj\Debug\Domain.Interfaces.csproj.CoreCompileInputs.cache

@@ -8,6 +8,7 @@ using Model.Services;
 using Moq;
 using System.Web.Http;
 using System.Web.Http.Results;
+using APIStories.Models.Base;
 using APIStories.Models.Story;
 using Infrastructure;
 
@@ -50,16 +51,17 @@ namespace APIStories.Tests.Controllers
                 new StoryBuilder().WithTitle("title 1"),
                 new StoryBuilder().WithTitle("title 2"),
             };
+           
             Mock<IStoryService> storyService = new Mock<IStoryService>();
             storyService.Setup(s => s.GetLastestStories(It.IsAny<string>(),
-                        It.IsAny<Pagination>())).Returns(lastestStories);
+                        It.IsAny<Pagination>())).Returns(new StaticPagedList<Story>(lastestStories));
             StoriesController storiesController = new StoriesController(storyService.Object);
 
-            var result = storiesController.GetHome(new LastestStoriesRequest()) as OkNegotiatedContentResult<IEnumerable<StoryRespose>>;
+            var result = storiesController.GetHome(new StoryFilterRequest()) as OkNegotiatedContentResult<PagedListResponse<Story>>;
 
             Assert.IsNotNull(result);
-            Assert.AreEqual(2,result.Content.Count());
-            Assert.AreEqual("title 2", result.Content.ToList()[1].Title);
+            Assert.AreEqual(2,result.Content.Items.Count());
+            Assert.AreEqual("title 2", result.Content.Items.ToList()[1].Title.Value);
         }
 
 
@@ -71,7 +73,7 @@ namespace APIStories.Tests.Controllers
                 It.IsAny<Pagination>())).Returns<IEnumerable<Story>>(null);
             StoriesController storiesController = new StoriesController(storyService.Object);
 
-            var result = storiesController.GetHome(new LastestStoriesRequest());
+            var result = storiesController.GetHome(new StoryFilterRequest(){});
 
             Assert.IsInstanceOfType(result, typeof(NotFoundResult));
 

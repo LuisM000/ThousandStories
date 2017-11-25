@@ -38,3 +38,7 @@ C:\sources\1000Stories\src\Repositories\bin\Debug\EntityFramework.SqlServer.xml
 C:\sources\1000Stories\src\Repositories\obj\Debug\Repositories.csprojResolveAssemblyReference.cache
 C:\sources\1000Stories\src\Repositories\obj\Debug\Repositories.dll
 C:\sources\1000Stories\src\Repositories\obj\Debug\Repositories.pdb
+C:\sources\1000Stories\src\Repositories\bin\Debug\Databases.Factories.dll.config
+C:\sources\1000Stories\src\Repositories\bin\Debug\Databases.dll.config
+C:\sources\1000Stories\src\Repositories\bin\Debug\Infrastructure.dll.config
+C:\sources\1000Stories\src\Repositories\obj\Debug\Repositories.csproj.CoreCompileInputs.cache

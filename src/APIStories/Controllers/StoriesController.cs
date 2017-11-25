@@ -6,7 +6,9 @@ using Model;
 using Model.Services;
 using System.Web.Http;
 using APIStories.Attributes;
+using APIStories.Models.Base;
 using APIStories.Models.Story;
+using Infrastructure;
 
 namespace APIStories.Controllers
 {
@@ -28,18 +30,31 @@ namespace APIStories.Controllers
             return Ok(new StoryRespose(story));
         }
 
-        // GET api/stories/home
+        // GET api/stories?Language='es'&Page=1&RowsPerPage=3&Text='texto'
+        [CheckModelForNull]
+        [ValidateModelState]
+        public IHttpActionResult Get([FromUri]StoryTextRequest storyTextRequest)
+        {
+            IPagedList<Story> pagedStories = storyService.GetStoriesWithText(storyTextRequest.Text,
+                storyTextRequest.Language, storyTextRequest.GetPagination(), null);//ToDo: add order
+            if (pagedStories == null)
+                return NotFound();
+
+            return Ok(new PagedListResponse<Story>(pagedStories));
+        }
+
+        // GET api/stories/home?Language='es'&Page=1&RowsPerPage=3
         [CheckModelForNull]
         [ValidateModelState]
         [Route("home")]
-        public IHttpActionResult GetHome([FromUri][Required]LastestStoriesRequest lastestStoriesRequest)
+        public IHttpActionResult GetHome([FromUri]StoryFilterRequest storyFilterRequest)
         {
-            IEnumerable<Story> stories = storyService.GetLastestStories(lastestStoriesRequest.Language,
-                                            lastestStoriesRequest.GetPagination());
-            if (stories == null)
+            IPagedList<Story> pagedStories = storyService.GetLastestStories(storyFilterRequest.Language,
+                                            storyFilterRequest.GetPagination());
+            if (pagedStories == null)
                 return NotFound();
 
-            return Ok(stories.Select(s=>new StoryRespose(s)));
+            return Ok(new PagedListResponse<Story>(pagedStories));
         }
 
     }

@@ -11,17 +11,17 @@ namespace Repositories.StoryRepository
     {
         public StoryRepository(IFactoryDB factoryDB) : base(factoryDB) { }
 
-        public IEnumerable<Story> GetLastestStories(string language, Pagination pagination)
+        public IPagedList<Story> GetLastestStories(string language, Pagination pagination)
         {
             var query = new Query<Story>(new StoryWithLanguageSpec(language), pagination, new StoryOrderByDate());
-            return GetAll(query);
+            return GetPage(query);
         }
 
-        public IEnumerable<Story> GetWithText(string text, string language, Pagination pagination, IOrdering<Story> orderBy)
+        public IPagedList<Story> GetWithText(string text, string language, Pagination pagination, IOrdering<Story> orderBy)
         {
             var query = new Query<Story>(new StoryWithTextSpec(text).And(new StoryWithLanguageSpec(language)),
                 pagination, orderBy);
-            return GetAll(query);
+            return GetPage(query);
         }
     }
 }

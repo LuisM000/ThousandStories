@@ -22,3 +22,5 @@ C:\sources\1000Stories\src\Databases\bin\Debug\Infrastructure.pdb
 C:\sources\1000Stories\src\Databases\bin\Debug\Model.pdb
 C:\sources\1000Stories\src\Databases\bin\Debug\EntityFramework.xml
 C:\sources\1000Stories\src\Databases\bin\Debug\EntityFramework.SqlServer.xml
+C:\sources\1000Stories\src\Databases\bin\Debug\Infrastructure.dll.config
+C:\sources\1000Stories\src\Databases\obj\Debug\Databases.csproj.CoreCompileInputs.cache

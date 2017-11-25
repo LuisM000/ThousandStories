@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Infrastructure;
+using Infrastructure.Order;
 
 
 namespace Model.Services
@@ -9,6 +10,10 @@ namespace Model.Services
     public interface IStoryService
     {
         Story GetStory(int idStory);
-        IEnumerable<Story> GetLastestStories(string language, Pagination pagination);
+        IPagedList<Story> GetLastestStories(string language, Pagination pagination);
+
+        IPagedList<Story> GetStoriesWithText(string text, string language, Pagination pagination,
+            IOrdering<Story> orderBy);
+
     }
 }

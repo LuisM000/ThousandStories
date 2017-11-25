@@ -35,7 +35,6 @@ namespace Repositories
 
         public virtual IEnumerable<TEntity> GetAll()
         {
-            var v = this;
             return factoryDB.CreateDataBase(Connection).Set<TEntity>().ToList<TEntity>();
         }
         public virtual IEnumerable<TEntity> GetTake(int start, int count)
@@ -87,6 +86,13 @@ namespace Repositories
             return factoryDB.CreateDataBase(Connection).Set<TEntity>().Prepare(query);
         }
 
+        public IPagedList<TEntity> GetPage(Query<TEntity> query)
+        {
+            var v = factoryDB.CreateDataBase(Connection).Set<TEntity>();
+            var entities = v.Prepare(query);
+            var total = v.Count(query);
+            return new StaticPagedList<TEntity>(entities,query.Pagination.PageNumber,query.Pagination.RowsPerPage,total);
+        }
 
         public void RollBack()
         {

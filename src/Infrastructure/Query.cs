@@ -13,9 +13,9 @@ namespace Infrastructure
             this.Specification = specification;
         }
 
-        public Pagination Pagination { get; private set; }
-        public IOrdering<TEntity> OrderBy { get; private set; }
-        public ISpecification<TEntity> Specification { get; private set; }
+        public Pagination Pagination { get; }
+        public IOrdering<TEntity> OrderBy { get; }
+        public ISpecification<TEntity> Specification { get; }
 
 
         public IQueryable<TEntity> Prepare(IQueryable<TEntity> queryable)
@@ -32,6 +32,12 @@ namespace Infrastructure
 
             return queryable;
         }
+
+        public int Count(IQueryable<TEntity> queryable)
+        {
+            return Specification == null ? queryable.Count() : queryable.Count(Specification.IsSatisifiedBy());
+        }
+
     }
 
     public static class QueryableExtensions
@@ -40,7 +46,9 @@ namespace Infrastructure
         {
             return query.Prepare(queryable);
         }
-
-
+        public static int Count<T>(this IQueryable<T> queryable, Query<T> query)
+        {
+            return query.Count(queryable);
+        }
     }
 }

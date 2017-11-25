@@ -17,7 +17,7 @@ namespace Repositories.Test
         [TestMethod]
         public void ReturnsFirstThreeResults()
         {
-            Pagination firstPageThreeResults = new Pagination(0, 3);
+            Pagination firstPageThreeResults = new Pagination(1, 3);
             IEnumerable<FooEntity> tenFooEntities = this.GivenAFooEntities(10);
             FakeDbSet<FooEntity> fooDbSet = new FakeDbSet<FooEntity>(tenFooEntities);
             Mock<FakeDatabase> database = FakeDatabase.CreateMockOfFakeDatabase(fooDbSet);
@@ -31,7 +31,7 @@ namespace Repositories.Test
         [TestMethod]
         public void ReturnsSecondPageOfResults()
         {
-            Pagination secondPageThreeResults = new Pagination(1, 3);
+            Pagination secondPageThreeResults = new Pagination(2, 3);
             IEnumerable<FooEntity> tenFooEntities = this.GivenAFooEntities(10);
             FakeDbSet<FooEntity> fooDbSet = new FakeDbSet<FooEntity>(tenFooEntities);
             Mock<FakeDatabase> database = FakeDatabase.CreateMockOfFakeDatabase(fooDbSet);
@@ -45,7 +45,7 @@ namespace Repositories.Test
         [TestMethod]
         public void ReturnsAllResultsOfLastPage()
         {
-            Pagination lastPageThreeResults = new Pagination(3, 3);
+            Pagination lastPageThreeResults = new Pagination(4, 3);
             IEnumerable<FooEntity> tenFooEntities = this.GivenAFooEntities(10);
             FakeDbSet<FooEntity> fooDbSet = new FakeDbSet<FooEntity>(tenFooEntities);
             Mock<FakeDatabase> database = FakeDatabase.CreateMockOfFakeDatabase(fooDbSet);
@@ -101,6 +101,21 @@ namespace Repositories.Test
 
             Assert.AreEqual(1, results.Count());
             Assert.AreEqual(fooCorrectText, results.FirstOrDefault());
+        }
+
+        [TestMethod]
+        public void ReturnsPaginatedList()
+        {
+            Pagination firstPageThreeResults = new Pagination(1, 3);
+            IEnumerable<FooEntity> tenFooEntities = this.GivenAFooEntities(10);
+            FakeDbSet<FooEntity> fooDbSet = new FakeDbSet<FooEntity>(tenFooEntities);
+            Mock<FakeDatabase> database = FakeDatabase.CreateMockOfFakeDatabase(fooDbSet);
+            BaseRepository<FooEntity> baseRepository = this.GivenABaseRepositoryWithDatabase(database.Object);
+
+            IPagedList<FooEntity> pageResults = baseRepository.GetPage(new Query<FooEntity>(null, firstPageThreeResults, null));
+
+            CollectionAssert.AreEqual(tenFooEntities.Take(3).ToList(), pageResults.ToList());
+            
         }
 
 

@@ -48,10 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PagedList\BasePagedList.cs" />
+    <Compile Include="PagedList\IPagedList.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Order\IOrderExtension.cs" />
     <Compile Include="Order\IOrdering.cs" />
+    <Compile Include="PagedList\PagedListMetaData.cs" />
+    <Compile Include="PagedList\PagedList.cs" />
+    <Compile Include="PagedList\StaticPagedList.cs" />
     <Compile Include="Pagination.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query.cs" />
