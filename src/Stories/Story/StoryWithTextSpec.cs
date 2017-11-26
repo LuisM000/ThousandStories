@@ -15,8 +15,8 @@ namespace Model
 
         public Expression<Func<Story, bool>> IsSatisifiedBy()
         {
-            return x => (x.Content != null && x.Content.Text == text) ||
-                        (x.Title !=null && x.Title.Value == text);
+            return x => (x.Content != null && x.Content.Text!=null && x.Content.Text.Contains(text) ||
+                        (x.Title !=null && x.Title.Value!=null && x.Title.Value.Contains(text)));
         }
 
     }

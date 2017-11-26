@@ -68,7 +68,7 @@ namespace APIStories.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IFactoryDB>().To<FactorySQL>().InSingletonScope();
-            kernel.Bind<IDatabaseInitializer<DataBaseSQL>>().To<UpdateInitializer>();
+            kernel.Bind<IDatabaseInitializer<DataBaseSQL>>().To<DropInitializer>();
         }
     }
 }

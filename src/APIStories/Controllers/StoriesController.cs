@@ -40,10 +40,10 @@ namespace APIStories.Controllers
             if (pagedStories == null)
                 return NotFound();
 
-            return Ok(new PagedListResponse<Story>(pagedStories));
+            return Ok(new PagedListResponse<StoryRespose>(pagedStories, pagedStories.Select(c => new StoryRespose(c))));
         }
 
-        // GET api/stories/home?Language='es'&Page=1&RowsPerPage=3
+        // GET api/stories/home?Language=es&Page=1&RowsPerPage=3
         [CheckModelForNull]
         [ValidateModelState]
         [Route("home")]
@@ -54,7 +54,7 @@ namespace APIStories.Controllers
             if (pagedStories == null)
                 return NotFound();
 
-            return Ok(new PagedListResponse<Story>(pagedStories));
+            return Ok(new PagedListResponse<StoryRespose>(pagedStories,pagedStories.Select(c=>new StoryRespose(c))));
         }
 
     }

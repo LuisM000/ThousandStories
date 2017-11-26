@@ -5,6 +5,6 @@ namespace Databases.Initializers
 {
     public class UpdateInitializer : MigrateDatabaseToLatestVersion<DataBaseSQL, Configuration>
     {
-
+        
     }
 }

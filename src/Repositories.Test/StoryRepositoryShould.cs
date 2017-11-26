@@ -36,8 +36,8 @@ namespace Repositories.Test
         [TestMethod]
         public void ReturnStoriesWithLanguage()
         {
-            Story storyEs = new StoryBuilder().WithLanguage(Languages.es);
-            Story storyEn = new StoryBuilder().WithLanguage(Languages.en);
+            Story storyEs = new StoryBuilder().WithLanguage(Languages.es).WithContent("dummy");
+            Story storyEn = new StoryBuilder().WithLanguage(Languages.en).WithContent("dummy");
             FakeDbSet<Story> storyDbSet = new FakeDbSet<Story>()
             {
                 storyEs,storyEn
@@ -45,7 +45,7 @@ namespace Repositories.Test
             Mock<FakeDatabase> database = FakeDatabase.CreateMockOfFakeDatabase(storyDbSet);
             StoryRepository.StoryRepository storyRepository = this.GivenAStoryRepositoryWithDatabase(database.Object);
 
-            IEnumerable<Story> stories = storyRepository.GetWithText(null, "en", new Pagination(1, 10), new StoryOrderByDate()).ToList();
+            IEnumerable<Story> stories = storyRepository.GetWithText("dummy", "en", new Pagination(1, 10), new StoryOrderByDate()).ToList();
 
             Assert.AreEqual(1, stories.Count());
             Assert.AreEqual(storyEn, stories.FirstOrDefault());

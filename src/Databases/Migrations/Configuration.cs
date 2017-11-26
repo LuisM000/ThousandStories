@@ -1,4 +1,8 @@
-﻿using System.Data.Entity.Migrations;
+﻿using System.Collections.Generic;
+using System.Data.Entity.Migrations;
+using System.Linq;
+using System.Runtime.InteropServices;
+using Model;
 
 namespace Databases.Migrations
 {
@@ -9,7 +13,6 @@ namespace Databases.Migrations
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
         }
-
 
     }
 }

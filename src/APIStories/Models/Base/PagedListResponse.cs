@@ -22,7 +22,7 @@ namespace APIStories.Models.Base
         public int LastItemOnPage { get; }
         public IEnumerable<T> Items { get; }
 
-        public PagedListResponse(IPagedList<T> pagedList)
+        public PagedListResponse(IPagedList pagedList, IEnumerable<T> items)
         {
             this.PageCount = pagedList.PageCount;
             this.TotalItemCount = pagedList.TotalItemCount;
@@ -34,7 +34,7 @@ namespace APIStories.Models.Base
             this.IsLastPage = pagedList.IsLastPage;
             this.FirstItemOnPage = pagedList.FirstItemOnPage;
             this.LastItemOnPage = pagedList.LastItemOnPage;
-            this.Items = pagedList.ToEnumerable();
+            this.Items = items;
         }
 
         

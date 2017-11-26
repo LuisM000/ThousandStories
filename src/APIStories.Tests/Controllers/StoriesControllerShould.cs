@@ -57,11 +57,11 @@ namespace APIStories.Tests.Controllers
                         It.IsAny<Pagination>())).Returns(new StaticPagedList<Story>(lastestStories));
             StoriesController storiesController = new StoriesController(storyService.Object);
 
-            var result = storiesController.GetHome(new StoryFilterRequest()) as OkNegotiatedContentResult<PagedListResponse<Story>>;
+            var result = storiesController.GetHome(new StoryFilterRequest()) as OkNegotiatedContentResult<PagedListResponse<StoryRespose>>;
 
             Assert.IsNotNull(result);
             Assert.AreEqual(2,result.Content.Items.Count());
-            Assert.AreEqual("title 2", result.Content.Items.ToList()[1].Title.Value);
+            Assert.AreEqual("title 2", result.Content.Items.ToList()[1].Title);
         }
 
 
