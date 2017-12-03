@@ -4,14 +4,17 @@
     {
         public string Title { get; }
         public string Content { get; }
-
+        public int? Popularity { get; }
 
         public StoryRespose(Model.Story story)
         {
-            if (story.Title != null)
-                this.Title = story.Title.Value;
-            if (story.Content != null)
-                this.Content = story.Content.Text;
+            if(story==null)
+                return;
+
+            this.Title = story.Title?.Value;
+            this.Content = story.Content?.Text;
+            this.Popularity = story.Rating?.Popularity;
+
         }
     }
 }

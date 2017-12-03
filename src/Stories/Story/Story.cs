@@ -6,7 +6,6 @@ namespace Model
 {
     public class Story : Entity
     {
-
         public Story()
         {
             this.PublishDate = DateTime.Now;

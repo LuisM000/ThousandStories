@@ -36,7 +36,7 @@ namespace APIStories.Controllers
         public IHttpActionResult Get([FromUri]StoryTextRequest storyTextRequest)
         {
             IPagedList<Story> pagedStories = storyService.GetStoriesWithText(storyTextRequest.Text,
-                storyTextRequest.Language, storyTextRequest.GetPagination(), null);//ToDo: add order
+                storyTextRequest.Language, storyTextRequest.GetPagination(), storyTextRequest.GetOrdering());
             if (pagedStories == null)
                 return NotFound();
 

@@ -7,8 +7,16 @@ namespace Model
         public int Positives { get; set; }
         public int Negatives { get; set; }
 
-        //ToDo: the rest of positives less negatives, return (only getter property) that indicates the ratio
-        //not use enums please
+        public int Popularity
+        {
+            get { return this.Positives - this.Negatives; }
+            private set { }
+        }
+
+        public int NumberOfVotes
+        {
+            get { return this.Positives + this.Negatives; }
+        }
 
     }
 }

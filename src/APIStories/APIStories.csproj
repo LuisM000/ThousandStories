@@ -223,6 +223,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Base\PagedListResponse.cs" />
+    <Compile Include="Models\Story\OrderByRequest.cs" />
     <Compile Include="Models\Story\StoryFilterRequest.cs" />
     <Compile Include="Models\Story\StoryRespose.cs" />
     <Compile Include="Models\Story\StoryTextRequest.cs" />

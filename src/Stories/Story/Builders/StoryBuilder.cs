@@ -14,7 +14,8 @@ namespace Model
             story = new Story()
             {
                 Language = new Model.Language(),
-                Content = new Content()
+                Content = new Content(),
+                Rating = new Rating()
             };
         }
 
@@ -39,6 +40,13 @@ namespace Model
         public StoryBuilder WithPublishDate(DateTime dateTime)
         {
             story.PublishDate = dateTime;
+            return this;
+        }
+
+        public StoryBuilder WithRating(int rating)
+        {
+            story.Rating.Positives = rating;
+            story.Rating.Negatives = 0;
             return this;
         }
 
