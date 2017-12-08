@@ -16,7 +16,8 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -218,10 +219,12 @@
     <Compile Include="Attributes\CheckModelForNullAttribute.cs" />
     <Compile Include="Attributes\ValidateModelStateAttribute.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\StoriesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ApiHelper.cs" />
     <Compile Include="Models\Base\PagedListResponse.cs" />
     <Compile Include="Models\Story\OrderByRequest.cs" />
     <Compile Include="Models\Story\StoryFilterRequest.cs" />

@@ -27,7 +27,7 @@ namespace APIStories.Controllers
             Story story = storyService.GetStory(id);
             if (story == null)
                 return NotFound();
-            return Ok(new StoryRespose(story));
+            return Ok(new StoryRespose(story, this));
         }
 
         // GET api/stories?Language='es'&Page=1&RowsPerPage=3&Text='texto'
@@ -40,7 +40,7 @@ namespace APIStories.Controllers
             if (pagedStories == null)
                 return NotFound();
 
-            return Ok(new PagedListResponse<StoryRespose>(pagedStories, pagedStories.Select(c => new StoryRespose(c))));
+            return Ok(new PagedListResponse<StoryRespose>(pagedStories, pagedStories.Select(c => new StoryRespose(c,this))));
         }
 
         // GET api/stories/home?Language=es&Page=1&RowsPerPage=3
@@ -53,8 +53,8 @@ namespace APIStories.Controllers
                                             storyFilterRequest.GetPagination());
             if (pagedStories == null)
                 return NotFound();
-
-            return Ok(new PagedListResponse<StoryRespose>(pagedStories,pagedStories.Select(c=>new StoryRespose(c))));
+       
+            return Ok(new PagedListResponse<StoryRespose>(pagedStories,pagedStories.Select(c=>new StoryRespose(c,this))));
         }
 
     }

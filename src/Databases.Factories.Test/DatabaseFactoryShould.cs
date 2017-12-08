@@ -19,7 +19,7 @@ namespace Databases.Factories.Test
             db.Set<Story>().Add(new Story()
             {
                 Title = new Model.Title("dummy title"),
-                Images = new List<Image>() { new Image() }
+                VisualRepresentation = new VisualRepresentation() {Images  = new List<Image>()}
             });
             db.SaveChanges();
             db.Dispose();

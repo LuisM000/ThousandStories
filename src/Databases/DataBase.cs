@@ -16,6 +16,8 @@ namespace Databases
         public virtual DbSet<Story> Stories { get; set; }
         public virtual DbSet<Language> Languages { get; set; }
 
+        public virtual DbSet<VisualRepresentation> VisualRepresentations { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

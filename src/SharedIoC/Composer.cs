@@ -10,9 +10,12 @@ namespace SharedIoC
         {
             //Model.Services
             this.Bind<IStoryService>().To<StoryService>();
+            this.Bind<IImageService>().To<ImageService>();
 
             //Repositories
             this.Bind<IStoryRepository>().To<StoryRepository>();
+            this.Bind<IImageRepository>().To<ImageRepository>();
+
 
         }
     }

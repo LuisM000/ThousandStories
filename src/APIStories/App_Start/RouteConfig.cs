@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using APIStories.Controllers;
 
 namespace APIStories
 {
@@ -18,6 +19,10 @@ namespace APIStories
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Image",
+                url: "api/image/{id}");
         }
     }
 }

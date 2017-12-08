@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StoryService.cs" />
-    <Compile Include="IStoryService.cs" />
+    <Compile Include="ImageServices\IImageService.cs" />
+    <Compile Include="ImageServices\ImageService.cs" />
+    <Compile Include="StoryServices\StoryService.cs" />
+    <Compile Include="StoryServices\IStoryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

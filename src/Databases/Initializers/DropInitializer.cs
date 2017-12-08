@@ -22,7 +22,7 @@ namespace Databases.Initializers
             context.Stories.AddRange(new List<Story>()
             {
                 new StoryBuilder().WithTitle("Historia 1").WithLanguage(Languages.es).WithPublishDate(DateTime.Now).
-                    WithRating(11),
+                    WithRating(11).WithAnyImage(),
                 new StoryBuilder().WithTitle("Historia 2").WithLanguage(Languages.es).
                     WithPublishDate(DateTime.Now.AddSeconds(1)).WithRating(2),
                 new StoryBuilder().WithTitle("Historia 3").WithLanguage(Languages.es).WithPublishDate(DateTime.Now.AddSeconds(2)),

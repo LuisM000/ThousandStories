@@ -41,8 +41,10 @@
   <ItemGroup>
     <Compile Include="Category.cs" />
     <Compile Include="Comment.cs" />
+    <Compile Include="Common\Data.cs" />
     <Compile Include="Content.cs" />
-    <Compile Include="Image.cs" />
+    <Compile Include="Images\Image.cs" />
+    <Compile Include="Images\VisualRepresentation.cs" />
     <Compile Include="Language.cs" />
     <Compile Include="Rating.cs" />
     <Compile Include="Story\Builders\StoryBuilder.cs" />
