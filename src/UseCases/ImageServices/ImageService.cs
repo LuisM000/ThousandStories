@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Infrastructure;
 using Infrastructure.Order;
+using Repositories.ImageRepository;
 using Repositories.StoryRepository;
 
 namespace Model.Services

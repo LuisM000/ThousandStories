@@ -71,8 +71,7 @@ namespace Repositories
 
         public virtual int SaveChanges()
         {
-            factoryDB.CreateDataBase(Connection).SaveChanges();
-            return 1;
+            return factoryDB.CreateDataBase(Connection).SaveChanges();
         }
 
 

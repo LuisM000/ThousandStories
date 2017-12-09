@@ -15,8 +15,8 @@ namespace Databases.Initializers
             base.Seed(context);
             context.Languages.AddRange(new List<Language>()
             {
-                new Language() {LanguageIdentifier = "es"},
-                new Language() {LanguageIdentifier = "en"},
+                new Language("es"),
+                new Language("en"),
             });
 
             context.Stories.AddRange(new List<Story>()

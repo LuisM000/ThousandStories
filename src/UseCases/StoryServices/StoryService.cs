@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Infrastructure;
 using Infrastructure.Order;
 using Repositories.StoryRepository;
@@ -34,6 +35,15 @@ namespace Model.Services
                 return null;
 
             return this.storyRepository.GetWithText(text, language, pagination, orderBy ?? new StoryOrderByDate());
+        }
+
+        public void InsertAndSave(Story story)
+        {
+            if (story == null)
+                new ArgumentNullException(nameof(story));
+
+            this.storyRepository.Insert(story);
+            this.storyRepository.SaveChanges();
         }
     }
 }

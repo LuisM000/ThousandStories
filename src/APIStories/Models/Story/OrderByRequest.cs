@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using APIStories.Models.Enums;
 using Infrastructure.Order;
 using Model;
 
 namespace APIStories.Models.Story
 {
-    public enum OrderBy { Date, Rating }
     public class OrderByRequest
     {
         public OrderByRequest(OrderBy order)

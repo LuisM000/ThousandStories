@@ -10,7 +10,6 @@ namespace Repositories.StoryRepository
     {
         IPagedList<Story> GetLastestStories(string language, Pagination pagination);
         IPagedList<Story> GetWithText(string text, string language, Pagination pagination, IOrdering<Story> orderBy);
-
-
+        
     }
 }

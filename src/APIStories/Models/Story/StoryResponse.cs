@@ -6,7 +6,7 @@ using Microsoft.Ajax.Utilities;
 
 namespace APIStories.Models.Story
 {
-    public class StoryRespose
+    public class StoryResponse
     {
         public string Title { get; }
         public string Content { get; }
@@ -14,7 +14,7 @@ namespace APIStories.Models.Story
         public string MainImage { get; }
         
 
-        public StoryRespose(Model.Story story, ApiController apiController)
+        public StoryResponse(Model.Story story, ApiController apiController)
         {
             if(story==null)
                 return;

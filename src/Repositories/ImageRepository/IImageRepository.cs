@@ -4,7 +4,7 @@ using Infrastructure.Order;
 using Model;
 using System.Collections.Generic;
 
-namespace Repositories.StoryRepository
+namespace Repositories.ImageRepository
 {
     public interface IImageRepository : IRepository<Image>
     {

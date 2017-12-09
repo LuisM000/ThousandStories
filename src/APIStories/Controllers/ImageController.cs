@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 using Model;
@@ -26,7 +28,7 @@ namespace APIStories.Controllers
             Image image = imageService.GetImage(id);
             if (image == null)
                 return NotFound();
-
+            
             var response = CreateImageResponse(image.ImageData?.Content);
             return ResponseMessage(response);
         }

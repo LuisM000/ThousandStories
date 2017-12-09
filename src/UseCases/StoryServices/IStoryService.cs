@@ -15,5 +15,6 @@ namespace Model.Services
         IPagedList<Story> GetStoriesWithText(string text, string language, Pagination pagination,
             IOrdering<Story> orderBy);
 
+        void InsertAndSave(Story story);
     }
 }

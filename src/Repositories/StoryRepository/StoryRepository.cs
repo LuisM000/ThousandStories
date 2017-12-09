@@ -1,4 +1,5 @@
-﻿using Databases.Factories;
+﻿using System;
+using Databases.Factories;
 using Infrastructure;
 using Infrastructure.Order;
 using Infrastructure.Specification;
@@ -23,5 +24,6 @@ namespace Repositories.StoryRepository
                 pagination, orderBy);
             return GetPage(query);
         }
+      
     }
 }

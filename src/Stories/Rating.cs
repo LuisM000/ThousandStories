@@ -10,7 +10,7 @@ namespace Model
         public int Popularity
         {
             get { return this.Positives - this.Negatives; }
-            private set { }
+            private set { }//Used by EF
         }
 
         public int NumberOfVotes

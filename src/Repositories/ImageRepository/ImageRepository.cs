@@ -5,7 +5,7 @@ using Infrastructure.Specification;
 using Model;
 using System.Collections.Generic;
 
-namespace Repositories.StoryRepository
+namespace Repositories.ImageRepository
 {
     public class ImageRepository : BaseRepository<Image>, IImageRepository
     {
