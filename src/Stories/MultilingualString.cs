@@ -9,7 +9,7 @@ namespace Model
     {
         public string DefaultText { get; set; }
 
-        public virtual IEnumerable<Translation> Translations { get; set; }
+        public virtual IList<Translation> Translations { get; set; }
 
 
         public string GetText(string language)

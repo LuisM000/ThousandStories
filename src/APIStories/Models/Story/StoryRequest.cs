@@ -20,7 +20,7 @@ namespace APIStories.Models.Story
         [Required]
         public string Text { get; set; }
 
-        public Images Images { get; set; }
+        public ImagesResponse ImagesResponse { get; set; }
 
         public Model.Story CreateStory(IList<Model.Language> languages)
         {
@@ -34,7 +34,7 @@ namespace APIStories.Models.Story
 
             var story = new Model.Story(this.Title, this.Text, languageStory)
             {
-                VisualRepresentation = this.Images?.CreateVisualRepresentation()
+                VisualRepresentation = this.ImagesResponse?.CreateVisualRepresentation()
             };
 
             return story;

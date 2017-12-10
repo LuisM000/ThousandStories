@@ -39,7 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs" />
+    <Compile Include="Category\Category.cs" />
+    <Compile Include="Category\Specs\MainCategorySpec.cs" />
     <Compile Include="Comment.cs" />
     <Compile Include="Common\Data.cs" />
     <Compile Include="Content.cs" />

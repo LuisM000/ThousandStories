@@ -24,9 +24,10 @@ namespace Model
         public virtual Content Content { get; set; }
         public virtual VisualRepresentation VisualRepresentation { get; set; }
         public DateTime PublishDate { get; set; }
-        public virtual IEnumerable<DateTime> UpdateDates { get; set; }
+        public virtual IList<DateTime> UpdateDates { get; set; }
+        public virtual IList<Category> Categories { get; set; }
         public virtual Language Language { get; set; }
-        public virtual IEnumerable<Comment> Comments { get; set; }
+        public virtual IList<Comment> Comments { get; set; }
         public virtual Rating Rating { get; set; }
 
     }

@@ -1,7 +1,7 @@
 ﻿
 namespace APIStories.Models.VisualRepresentation
 {
-    public class Image
+    public class ImageResponse
     {
         public int Index { get; set; }
         public byte[] ImageData { get; set; }

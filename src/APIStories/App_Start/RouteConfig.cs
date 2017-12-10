@@ -21,7 +21,7 @@ namespace APIStories
             );
 
             routes.MapRoute(
-                name: "Image",
+                name: "ImageResponse",
                 url: "api/image/{id}");
         }
     }

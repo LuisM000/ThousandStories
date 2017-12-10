@@ -5,9 +5,9 @@ using System.Web;
 
 namespace APIStories.Models.VisualRepresentation
 {
-    public class Images
+    public class ImagesResponse
     {
-        public IList<Image> ImageRepresentations { get; set; }
+        public IList<ImageResponse> ImageRepresentations { get; set; }
 
         public Model.VisualRepresentation CreateVisualRepresentation()
         {

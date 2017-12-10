@@ -10,7 +10,7 @@ namespace APIStories.Helpers
     {
         public static string GetImageRoute(this ApiController apiController, int idImage)
         {
-            return apiController.Url.Link("Image", new {id = idImage});
+            return apiController.Url.Link("ImageResponse", new {id = idImage});
         }
     }
 }

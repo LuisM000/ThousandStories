@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryService\ICategoryService.cs" />
+    <Compile Include="CategoryService\CategoryService.cs" />
     <Compile Include="ImageServices\IImageService.cs" />
     <Compile Include="LanguageService\ILanguageService.cs" />
     <Compile Include="ImageServices\ImageService.cs" />

@@ -4,7 +4,7 @@ namespace Model
 {
     public class Content : Entity
     {
-        private Content() { }
+        protected Content() { }
 
         public Content(string text)
         {

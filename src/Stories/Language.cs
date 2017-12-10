@@ -4,7 +4,7 @@ namespace Model
 {
     public class Language : Entity
     {
-        private Language() { }
+        protected Language() { }
         public Language(string languageIdentifier)
         {
             this.LanguageIdentifier = languageIdentifier;

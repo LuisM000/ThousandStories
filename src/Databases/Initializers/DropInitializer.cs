@@ -19,6 +19,34 @@ namespace Databases.Initializers
                 new Language("en"),
             });
 
+            context.Categories.AddRange(new List<Category>()
+            {
+                new Category(){IsMainCategory = true, Name = new MultilingualString(){DefaultText = "Efeméride",
+                    Translations = new List<Translation>()
+                    {
+                        new Translation("Event",new Language("en")),
+                        new Translation("Efeméride",new Language("es")),
+                    }},},
+
+                new Category(){IsMainCategory = true, Name = new MultilingualString(){DefaultText = "Chistes",
+                    Translations = new List<Translation>()
+                    {
+                        new Translation("Jokes",new Language("en")),
+                        new Translation("Chistes",new Language("es")),
+                    }},
+                    Subcategories = new List<Category>()
+                    {
+                        new Category(){Name = new MultilingualString(){DefaultText = "Cortos",
+                            Translations = new List<Translation>()
+                            {
+                                new Translation("Short",new Language("en")),
+                                new Translation("Cortos",new Language("es")),
+                            }},}
+                    }
+                }
+
+            });
+
             context.Stories.AddRange(new List<Story>()
             {
                 new StoryBuilder().WithTitle("Historia 1").WithLanguage(Languages.es).WithPublishDate(DateTime.Now).

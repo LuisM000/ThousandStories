@@ -4,6 +4,14 @@ namespace Model
 {
     public class Translation : Entity
     {
+        protected Translation() { }
+
+        public Translation(string text, Language language)
+        {
+            this.Text = text;
+            this.Language = language;
+        }
+
         public string Text { get; set; }
         public virtual Language Language { get; set; }
 

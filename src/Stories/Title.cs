@@ -6,7 +6,7 @@ namespace Model
     {
         public string Value { get; private set; }
 
-        private Title() { }
+        protected Title() { }
         public Title(string value)
         {
             //ToDo: create bussines rules
