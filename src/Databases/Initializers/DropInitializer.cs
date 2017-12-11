@@ -8,7 +8,7 @@ using Model;
 
 namespace Databases.Initializers
 {
-    public class DropInitializer : DropCreateDatabaseAlways<DataBaseSQL>
+    public class DropInitializer : DropCreateDatabaseIfModelChanges<DataBaseSQL>
     {
         protected override void Seed(DataBaseSQL context)
         {
