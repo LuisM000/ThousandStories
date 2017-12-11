@@ -3,7 +3,7 @@ namespace Model
 {
     public class Image : Entity
     {
-        private Image() { }
+        protected Image() { }
 
         public Image(int index, Data imageData)
         {

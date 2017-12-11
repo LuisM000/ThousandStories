@@ -9,7 +9,7 @@ namespace Model
 {
     public class Data:Entity
     {
-        private Data() { }
+        protected Data() { }
 
         public Data(byte[] content)
         {
